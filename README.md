@@ -46,22 +46,28 @@ The project is developed using **Python**, **Flask**, **Scikit-learn**, **Pandas
 
 ```
 HUMAN_DEVELOPMENT_INDEX/
-│── app.py
-│── model.pkl
-│── requirements.txt
-│── HDI.csv
-│── Procfile
-│── runtime.txt
 │
-├── static/
+├── Dataset/
+│   └── HDI.csv
 │
-└── templates/
-    ├── index.html
-    ├── predict.html
-    └── result.html
+├── Flask/
+│   ├── static/
+│   │   ├── home.css
+│   │   └── style.css
+│   │
+│   ├── templates/
+│   │   ├── home.html
+│   │   └── index.html
+│   │
+│   ├── app.py
+│   ├── HDI.pkl
+│   ├── Procfile
+│   └── requirements.txt
+│
+└── Training/
+    ├── HDI.pkl
+    └── HumDevIndex.ipynb
 ```
-
----
 
 ## ⚙ Installation
 
