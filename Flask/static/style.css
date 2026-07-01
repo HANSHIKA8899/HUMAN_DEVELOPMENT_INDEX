@@ -9,11 +9,13 @@ body{
     min-height:100vh;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     background:linear-gradient(-45deg,#020617,#0f172a,#1e3a8a,#312e81);
     background-size:400% 400%;
     animation:bg 12s ease infinite;
-    overflow:hidden;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:40px  0;
 }
 
 @keyframes bg{
@@ -49,11 +51,13 @@ body{
     width:100%;
     display:flex;
     justify-content:center;
-    padding:30px;
+    align-items:flex-start;
+    padding:20px;
 }
 
 .card{
-    width:520px;
+    width:550px;
+    max-width:95%;
     background:rgba(255,255,255,.08);
     backdrop-filter:blur(18px);
     border:1px solid rgba(255,255,255,.15);
@@ -138,26 +142,39 @@ button:hover{
 
 .result{
     margin-top:25px;
-    padding:18px;
-    border-radius:12px;
-    text-align:center;
-    background:rgba(16,185,129,.18);
-    border:1px solid #10b981;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.result h1{
+    color:#38bdf8;
+    margin:10px 0;
+    font-size:40px;
+}
+
+.result h2{
+    margin-bottom:10px;
 }
 
 .result h3{
-    color:#ffffff;
+    margin:15px 0;
+    color:#22c55e;
 }
 
-@media(max-width:600px){
-
-.card{
-    width:100%;
-    padding:25px;
+.result hr{
+    border:1px solid rgba(255,255,255,.2);
+    margin:15px 0;
 }
 
-.heading h1{
-    font-size:24px;
+.result ul{
+    text-align:left;
+    padding-left:20px;
 }
 
+.result li{
+    margin:10px 0;
+    color:#e2e8f0;
 }
